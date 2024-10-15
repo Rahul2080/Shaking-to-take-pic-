@@ -41,48 +41,49 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBecEltUk1Qz3TB_JbUVVvMYrJEL6CsQNs',
-    appId: '1:898886160105:web:75adff5edfe06166afaa78',
-    messagingSenderId: '898886160105',
-    projectId: 'shake-image-pick',
-    authDomain: 'shake-image-pick.firebaseapp.com',
-    storageBucket: 'shake-image-pick.appspot.com',
-    measurementId: 'G-LWEPKQE9PX',
+    apiKey: 'AIzaSyDiiRr8wJAzvFFHWrUI3rTjDytZjSvdP88',
+    appId: '1:390008855099:web:162840e5a93491e75cda1e',
+    messagingSenderId: '390008855099',
+    projectId: 'capture-image-e5a7f',
+    authDomain: 'capture-image-e5a7f.firebaseapp.com',
+    storageBucket: 'capture-image-e5a7f.appspot.com',
+    measurementId: 'G-VM1GEYZBLN',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAzv9a1Em0BIFmDyLEHbbf_yi_S5cQc0o4',
-    appId: '1:898886160105:android:30da40ba4de5a79eafaa78',
-    messagingSenderId: '898886160105',
-    projectId: 'shake-image-pick',
-    storageBucket: 'shake-image-pick.appspot.com',
+    apiKey: 'AIzaSyD0yyF-bf3kkVyL240oxqJSfzR3apYPHtU',
+    appId: '1:390008855099:android:322c919367b4e5f65cda1e',
+    messagingSenderId: '390008855099',
+    projectId: 'capture-image-e5a7f',
+    storageBucket: 'capture-image-e5a7f.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAvRCx6EqKybd5H41Ba9qcXLSdZLSnm9hE',
-    appId: '1:898886160105:ios:120e6214dc997249afaa78',
-    messagingSenderId: '898886160105',
-    projectId: 'shake-image-pick',
-    storageBucket: 'shake-image-pick.appspot.com',
+    apiKey: 'AIzaSyByAE6Yoqmjzx9Xc3L37aNbo8Fu88Kjwmo',
+    appId: '1:390008855099:ios:b481558c6e58ccf75cda1e',
+    messagingSenderId: '390008855099',
+    projectId: 'capture-image-e5a7f',
+    storageBucket: 'capture-image-e5a7f.appspot.com',
     iosBundleId: 'com.example.shakingpic',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAvRCx6EqKybd5H41Ba9qcXLSdZLSnm9hE',
-    appId: '1:898886160105:ios:120e6214dc997249afaa78',
-    messagingSenderId: '898886160105',
-    projectId: 'shake-image-pick',
-    storageBucket: 'shake-image-pick.appspot.com',
+    apiKey: 'AIzaSyByAE6Yoqmjzx9Xc3L37aNbo8Fu88Kjwmo',
+    appId: '1:390008855099:ios:b481558c6e58ccf75cda1e',
+    messagingSenderId: '390008855099',
+    projectId: 'capture-image-e5a7f',
+    storageBucket: 'capture-image-e5a7f.appspot.com',
     iosBundleId: 'com.example.shakingpic',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBecEltUk1Qz3TB_JbUVVvMYrJEL6CsQNs',
-    appId: '1:898886160105:web:f78a20575c85c2d9afaa78',
-    messagingSenderId: '898886160105',
-    projectId: 'shake-image-pick',
-    authDomain: 'shake-image-pick.firebaseapp.com',
-    storageBucket: 'shake-image-pick.appspot.com',
-    measurementId: 'G-LD281P4DEW',
+    apiKey: 'AIzaSyDiiRr8wJAzvFFHWrUI3rTjDytZjSvdP88',
+    appId: '1:390008855099:web:b61f3f195fa328295cda1e',
+    messagingSenderId: '390008855099',
+    projectId: 'capture-image-e5a7f',
+    authDomain: 'capture-image-e5a7f.firebaseapp.com',
+    storageBucket: 'capture-image-e5a7f.appspot.com',
+    measurementId: 'G-1ZZ1PFGDML',
   );
+
 }
