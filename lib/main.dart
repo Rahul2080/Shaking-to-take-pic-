@@ -28,28 +28,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  late ShakeDetector _shakeDetector;
-
-  @override
-  void initState() {
-    super.initState();
-    _shakeDetector = ShakeDetector(() {
-      // Handle shake event
-      _openApp();
-    });
-    _shakeDetector.startListening();
-  }
-
-  void _openApp() {
-    // Navigate to your desired screen or perform the desired action
-    print("App opened!");
-  }
-
-  @override
-  void dispose() {
-    // Dispose of the shake detector if necessary
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {

@@ -1,21 +1,38 @@
-import 'package:sensors_plus/sensors_plus.dart';
-class ShakeDetector {
-  final Function onShake;
+import 'package:flutter/material.dart';
+import 'package:shake/shake.dart';
 
-  ShakeDetector(this.onShake);
+class ShakeDetectionPage extends StatefulWidget {
+  @override
+  _ShakeDetectionPageState createState() => _ShakeDetectionPageState();
+}
 
-  void startListening() {
-    // Listen to accelerometer events
-    accelerometerEvents.listen((AccelerometerEvent event) {
-      if (_isShake(event)) {
-        onShake();
-      }
-    });
+class _ShakeDetectionPageState extends State<ShakeDetectionPage> {
+  ShakeDetector? detector;
+
+  @override
+  void initState() {
+    super.initState();
+    detector = ShakeDetector.autoStart(
+      onPhoneShake: () {
+        // When phone shakes, print something or trigger an action
+        print("Phone shaken!");
+        // You can add logic here to perform an action (e.g., show a dialog, open a screen)
+      },
+    );
   }
 
-  bool _isShake(AccelerometerEvent event) {
-    // A simple shake detection algorithm
-    const double threshold = 15.0; // Adjust this value as needed
-    return (event.x > threshold || event.y > threshold || event.z > threshold);
+  @override
+  void dispose() {
+    detector?.stopListening();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Text('Shake your phone!'),
+      ),
+    );
   }
 }
