@@ -50,18 +50,15 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       body: Center(
         child: AnimatedBuilder(
           animation: _animation,
           builder: (context, child) {
             return Transform.scale(
               scale: _animation.value, // Apply scaling animation
-              child: Icon(
-                Icons.visibility, // Change this to your desired glass icon
-                size: 100.sp, // Base size
-                color: Colors.white70, // Icon color
-              ),
+              child: Image.asset('assets/splashimage.jpg',width: 100.w,height: 80.h,)
+
             );
           },
         ),
