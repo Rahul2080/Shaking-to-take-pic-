@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shakingpic/Authentication/Splash.dart';
 
-import 'Get_App_Link.dart';
-import 'Home.dart';
+
+import 'Applink.dart';
 import 'firebase_options.dart';
 
 late List<CameraDescription> cameras; // Global variable to store available cameras
